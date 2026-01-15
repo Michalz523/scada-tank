@@ -1,40 +1,22 @@
 System SCADA: Automatyczna Linia Rozlewnicza 
 1. Opis Projektu
    
-Projekt stanowi drugi etap realizacji przedmiotu Informatyka II. Jest to aplikacja desktopowa w języku Python, która wizualizuje proces przemysłowy typu SCADA (Supervisory Control and Data Acquisition).
-Symulacja przedstawia pracę automatycznej linii rozlewniczej w zakładzie produkcyjnym.
+Projekt stanowi wizualizację i symulację zautomatyzowanego procesu przemysłowego typu SCADA (Supervisory Control and Data Acquisition). 
+Aplikacja została stworzona w języku Python z wykorzystaniem biblioteki PyQt6 i modeluje pełny cykl produkcyjny browaru – od przygotowania surowców po rozlew gotowego produktu.
 
-2. Scenariusz procesu:
-
-  Napełnianie: Płyny z dwóch zbiorników surowców (Woda i Koncentrat) są transportowane rurami do Mieszalnika.
-  
-  Przetwarzanie: W Mieszalniku następuje proces łączenia składników oraz podgrzewanie cieczy za pomocą grzałki do zadanej temperatury.
-  
-  Transport końcowy: Gotowy produkt jest przepompowywany za pomocą pompy do zbiornika magazynowego.
-  
-  Monitoring: System automatycznie monitoruje poziomy cieczy oraz temperaturę, reagując na sytuacje alarmowe.
-
-2. Funkcjonalności i Wymagania
+2. Funkcjonalności
    
-  Wizualizacja graficzna: Ekran główny z 4 zbiornikami oraz systemem rur z zakrętami 90 stopni.
-  
-  Elementy dynamiczne: Animowana pompa, grzałka oraz przepływ cieczy w rurach.
-  
-  Automatyzacja: Proces przebiega w pełni automatycznie po zadaniu parametrów początkowych przez użytkownika.
-  
-  Architektura OOP: Program oparty na klasach reprezentujących elementy procesu, sygnały i ekrany.
-  
-  Wieluekranowość: Możliwość przełączania między widokiem instalacji a raportami i alarmami.
+Wizualizacja procesów: Dynamiczne poziomy cieczy, animowane mieszadła, przepływy w rurach oraz system napełniania butelek.
 
-  3. Struktura Projektu (Klasy)
-Zgodnie z zasadami projektowania obiektowego, kod został podzielony na moduły:
+Siedem etapów produkcji: Śrutowanie (Pobieranie słodu i mielenie w śrutowniku), Zacieranie (Podgrzewanie zacieru w kadzi zaciernej z kontrolą temperatury), Filtracja (Oddzielanie brzeczki od młóta (odpadów)), Warzenie (Gotowanie brzeczki i automatyczne dozowanie chmielu), Chłodzenie (Przejście przez wymiennik ciepła (chłodnicę) z monitoringiem temperatury Wejściowej i Wyjciowej), Fermentacja (Kontrolowany proces w fermentorze z monitoringiem ciśnienia CO2), Rozlew (Automatyczna linia rozlewnicza napełniająca butelki na taśmociągu).
 
-  ElementSystemu: Klasa bazowa dla obiektów fizycznych.
+Raport Produkcyjny: Dynamiczne podsumowanie zużycia słodu, wody, chmielu oraz licznik wyprodukowanych butelek.
 
-  Zbiornik: Zarządzanie poziomem i pojemnością.
 
-  Urzadzenie: Logika pracy pomp i grzałek.
+3. Wymagania Techniczne
 
-  Symulator: Główny silnik sterujący logiką procesu.
+Obiekty: 6 zbiorników, system rur z zakrętami 90 stopni, elementy dynamiczne (mieszadła, chłodnica, taśmociąg)
 
-  Interfejs: Obsługa biblioteki graficznej i wyświetlanie stanów.
+Logika: Proces przebiega automatycznie na podstawie zadanych parametrów
+
+Architektura: Program oparty na programowaniu obiektowym (OOP) z podziałem na logikę (logic.py), interfejs (gui.py) i model danych (models.py)
