@@ -33,19 +33,6 @@ Profesjonalny symulator systemu SCADA (Supervisory Control and Data Acquisition)
 * `models.py` – Definicje obiektów fizycznych (Zbiornik, Srutownik itp.).
 * `settings.py` – Konfiguracja kolorów, stałych procesowych i prędkości symulacji.
 
-## 🚦 Jak uruchomić
-
-1.  Upewnij się, że masz zainstalowanego Pythona 3.10+.
-2.  Zainstaluj wymaganą bibliotekę PyQt6:
-    ```bash
-    pip install PyQt6
-    ```
-3.  Uruchom aplikację:
-    ```bash
-    python main.py
-    ```
-4.  W oknie początkowym zadaj cel produkcyjny (liczbę butelek) i kliknij "OTWÓRZ PANEL".
-
 ## 📸 Widok Systemu
 
 System wizualizuje następujące etapy:
@@ -57,4 +44,5 @@ System wizualizuje następujące etapy:
 6.  **Rozlew:** Trójfazowe napełnianie butelek na taśmociągu.
 
 ---
+
 *Projekt stworzony na potrzeby edukacyjne jako demonstracja systemów sterowania procesami ciągłymi.*
