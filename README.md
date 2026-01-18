@@ -23,7 +23,7 @@ Profesjonalny symulator systemu SCADA (Supervisory Control and Data Acquisition)
 
 * **Python 3.x** – Główny język programowania.
 * **PyQt6** – Zaawansowany interfejs graficzny i silnik renderowania 2D.
-* **Logic Pipeline Model** – Autorski model współbieżności procesów przemysłowych.
+* **Logic Pipeline Model** – Model współbieżności procesów przemysłowych.
 
 ## 🏗 Struktura Projektu
 
@@ -46,3 +46,4 @@ System wizualizuje następujące etapy:
 ---
 
 *Projekt stworzony na potrzeby edukacyjne jako demonstracja systemów sterowania procesami ciągłymi.*
+
